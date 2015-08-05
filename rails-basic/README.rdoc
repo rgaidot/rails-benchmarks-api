@@ -1,4 +1,4 @@
-# Simple app with Rails API gem
+# Simple app with Rails
 
 ## Run app
 
@@ -41,22 +41,22 @@ Document Path:          /samples
 Document Length:        1037 bytes
 
 Concurrency Level:      4
-Time taken for tests:   6.013 seconds
+Time taken for tests:   6.378 seconds
 Complete requests:      10000
 Failed requests:        0
 Total transferred:      13670000 bytes
 HTML transferred:       10370000 bytes
-Requests per second:    1663.14 [#/sec] (mean)
-Time per request:       2.405 [ms] (mean)
-Time per request:       0.601 [ms] (mean, across all concurrent requests)
-Transfer rate:          2220.23 [Kbytes/sec] received
+Requests per second:    1567.92 [#/sec] (mean)
+Time per request:       2.551 [ms] (mean)
+Time per request:       0.638 [ms] (mean, across all concurrent requests)
+Transfer rate:          2093.12 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
 Connect:        0    0   0.0      0       0
-Processing:     1    2   2.9      2      58
-Waiting:        1    2   1.1      1      27
-Total:          1    2   2.9      2      58
+Processing:     1    2   2.3      2      64
+Waiting:        1    2   1.4      2      63
+Total:          2    3   2.3      2      64
 
 Percentage of the requests served within a certain time (ms)
   50%      2
@@ -64,8 +64,8 @@ Percentage of the requests served within a certain time (ms)
   75%      2
   80%      2
   90%      3
-  95%      4
-  98%     12
-  99%     19
- 100%     58 (longest request)
+  95%      5
+  98%      8
+  99%     12
+ 100%     64 (longest request)
 ```

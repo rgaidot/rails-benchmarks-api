@@ -9,7 +9,7 @@ RAILS_ENV=production bundle exec puma -C config/puma.rb
 ## Apache Benchmark cmd
 
 ```bash
-ab -c 4 -n 10000 -H "Content-type: application/json" http://127.0.0.1:3000/samples
+ab -c 4 -n 10000 -H "Content-type: application/json" http://127.0.0.1:3000/v1/samples
 ```
 
 ## Results
@@ -37,26 +37,25 @@ Server Software:
 Server Hostname:        127.0.0.1
 Server Port:            3000
 
-Document Path:          /sample
-Document Length:        1564 bytes
+Document Path:          /v1/samples
+Document Length:        1037 bytes
 
 Concurrency Level:      4
-Time taken for tests:   5.548 seconds
+Time taken for tests:   6.120 seconds
 Complete requests:      10000
 Failed requests:        0
-Non-2xx responses:      10000
-Total transferred:      17250000 bytes
-HTML transferred:       15640000 bytes
-Requests per second:    1802.31 [#/sec] (mean)
-Time per request:       2.219 [ms] (mean)
-Time per request:       0.555 [ms] (mean, across all concurrent requests)
-Transfer rate:          3036.12 [Kbytes/sec] received
+Total transferred:      12790000 bytes
+HTML transferred:       10370000 bytes
+Requests per second:    1633.89 [#/sec] (mean)
+Time per request:       2.448 [ms] (mean)
+Time per request:       0.612 [ms] (mean, across all concurrent requests)
+Transfer rate:          2040.77 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.2      0      18
+Connect:        0    0   0.0      0       1
 Processing:     1    2   3.4      2      82
-Waiting:        1    2   2.4      1      82
+Waiting:        1    2   1.9      1      82
 Total:          1    2   3.4      2      83
 
 Percentage of the requests served within a certain time (ms)
@@ -65,8 +64,8 @@ Percentage of the requests served within a certain time (ms)
   75%      2
   80%      2
   90%      3
-  95%      4
-  98%     10
-  99%     14
+  95%      5
+  98%     13
+  99%     22
  100%     83 (longest request)
-```
+ ```
